@@ -27,9 +27,14 @@
         <section>
             <h3>Portfolio</h3>
             <div class="portfolio-tiles">
-                <img src="./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="HTML graphic">
-                <img src="./assets/images/zan-yBEUD8SWABc-unsplash.jpg" alt="HTML graphic">
-                <img src="./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="HTML graphic">
+                <img src="./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" id="carousel-1" alt="HTML graphic" onclick="carouselButton(1)">
+                <img src="./assets/images/zan-yBEUD8SWABc-unsplash.jpg" id="carousel-2" alt="HTML graphic" onclick="carouselButton(2)">
+                <img src="./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" id="carousel-3" alt="HTML graphic" onclick="carouselButton(3)">
+            </div>
+            <div class="buttons">
+                <div class="carousel-button" id="button1" onclick="carouselButton(1)"></div>
+                <div class="carousel-button" id="button2" onclick="carouselButton(2)"></div>
+                <div class="carousel-button" id="button3" onclick="carouselButton(3)"></div>
             </div>
         </section>
         <section>
@@ -42,6 +47,7 @@
         <div>
 
         </div>
-    </footer>    
+    </footer>
+    <script src="./assets/script.js"></script>    
 </body>
 </html>
