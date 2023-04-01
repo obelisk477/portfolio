@@ -64,7 +64,7 @@ main h3 {
     
 }
 .portfolio-tiles img{
-    margin: 20px -10px;
+    margin: 20px 5px;
     height: 300px;
     transition: 0.22s;
 }
