@@ -5,40 +5,30 @@ function carouselButton(buttonId) {
     } else if (buttonId === 2) {
         otherButtons.push(1,3)
     } else {
-        otherButtons.push(1,2)
+        otherButtons.push(2,1)
     }
 
-    console.log(otherButtons)
+    var carouselItem = document.querySelector("#carousel-" + buttonId).style
+    var otherImgOne = document.querySelector("#carousel-" + otherButtons[0]).style
+    var otherImgTwo = document.querySelector("#carousel-" + otherButtons[1]).style
+    var buttonItem = document.querySelector("#button" + buttonId).style
+    var otherBtnOne = document.querySelector("#button" + otherButtons[0]).style
+    var otherBtnTwo = document.querySelector("#button" + otherButtons[1]).style
 
-    var carouselItem = document.querySelector("#carousel-" + buttonId)
-    var otherImgOne = document.querySelector("#carousel-" + otherButtons[0])
-    var otherImgTwo = document.querySelector("#carousel-" + otherButtons[1])
+    carouselItem.height = "340px"
+    otherImgOne.height = otherImgTwo.height = "300px"
 
-    var buttonItem = document.querySelector("#button" + buttonId)
-    var otherBtnOne = document.querySelector("#button" + otherButtons[0])
-    var otherBtnTwo = document.querySelector("#button" + otherButtons[1])
+    carouselItem.border = "solid 3px #BF5443"
+    otherImgOne.border = otherImgTwo.border = "none"
 
-    carouselItem.style.height = "340px"
-    otherImgOne.style.height = "300px"
-    otherImgTwo.style.height = "300px"
+    carouselItem.zIndex = "11"
+    otherImgOne.zIndex = "10"
+    otherImgTwo.zIndex = "9"
 
-    carouselItem.style.border = "solid 2px #BF5443"
-    otherImgOne.style.border = "none"
-    otherImgTwo.style.border = "none"
+    carouselItem.opacity = "1"
+    otherImgOne.opacity = otherImgTwo.opacity = "0.6"
 
-    carouselItem.style.zIndex = "11"
-    otherImgOne.style.zIndex = "10"
-    otherImgTwo.style.zIndex = "10"
-
-    carouselItem.style.opacity = "1"
-    otherImgOne.style.opacity = "0.6"
-    otherImgTwo.style.opacity = "0.6"
-
-    buttonItem.style.backgroundColor = "#BF5443"
-    otherBtnOne.style.backgroundColor = "transparent"
-    otherBtnTwo.style.backgroundColor = "transparent"
-
-
-
+    buttonItem.backgroundColor = "#BF5443"
+    otherBtnOne.backgroundColor = otherBtnTwo.backgroundColor = "transparent"
 
 }
